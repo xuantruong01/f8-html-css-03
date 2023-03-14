@@ -10,3 +10,136 @@ body {
     font-size: 1.6em;
     font-family: "Sora", sans-serif;
 }
+
+:root {
+    --primary-color: #10375c;
+}
+/* -----comon-------- */
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 60px;
+    border: 1px solid #2e80ce;
+    display: inline-block;
+    color: #fff;
+    background-color: #2e80ce;
+    height: var(--height);
+    min-width: 205px;
+    line-height: var(--height);
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* -------header--------- */
+.header {
+    padding-top: 30px;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.logo {
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2e80ce;
+}
+
+.logo__circle::after {
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+}
+
+.logo__text {
+    color: #fff;
+    margin-left: 0.6em;
+    line-height: 1.6em;
+    text-align: right;
+}
+
+.logo__brand {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.logo__brand--small {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+/* ----Header-top-------- */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    position: relative;
+}
+
+.action__login,
+.navbar__link {
+    padding: 4px 21px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #c9d2da;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.action__sign-up {
+    --height: 44px;
+    min-width: 104px;
+    border-radius: 22px;
+}

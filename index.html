@@ -81,18 +81,66 @@
             content="./assets/favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
+        <!-- reset.css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap"
             rel="stylesheet"
         />
-        <!-- Styles -->
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-        <!-- reset.css -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
         <title>shine smile</title>
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="/"
+                        ><div class="logo">
+                            <span class="logo__circle"></span>
+                            <span class="logo__text">
+                                <span class="logo__brand">shine</span>
+                                <span class="logo__brand logo__brand--small">
+                                    smile
+                                </span>
+                            </span>
+                        </div></a
+                    >
+                    <!-- navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a
+                                    class="navbar__link navbar__link--active"
+                                    href="#!"
+                                >
+                                    Home
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#!">Services</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#!"> About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#!"> Doctors</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- action -->
+                    <div class="action">
+                        <a href="#!" class="action__login">Log In</a>
+                        <button href="#!" class="btn action__sign-up">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
