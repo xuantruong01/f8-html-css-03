@@ -111,7 +111,7 @@ a {
     position: relative;
 }
 
-.action__login,
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     font-weight: 300;
@@ -137,9 +137,86 @@ a {
     border-radius: 50%;
     background: #fff;
 }
+.header-action {
+    display: flex;
+    align-items: center;
+}
 
-.action__sign-up {
+.header-action__sign-up {
+    margin-left: 7px;
     --height: 44px;
     min-width: 104px;
     border-radius: 22px;
+}
+
+/* ------------Hero---------- */
+
+.hero {
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__heading {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__contact {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+}
+
+.hero__media {
+    width: 46%;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative;
+}
+
+.hero__img:nth-child(2) {
+    width: 210px;
+    height: 410px;
+    border-radius: 0px 6px 6px 0px;
+    object-fit: cover;
+    margin-left: -6px;
 }
